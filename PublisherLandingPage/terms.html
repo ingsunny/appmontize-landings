@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms of Service | Publisher First</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;500;700;800&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: { sans: ['"Plus Jakarta Sans"', 'sans-serif'], display: ['"Outfit"', 'sans-serif'] },
+                    colors: { brand: { cyan: '#00C6FF', blue: '#0072FF', dark: '#0F172A' } },
+                    borderRadius: { 'bubble': '7.5rem' }
+                }
+            }
+        }
+    </script>
+    <style>
+        .hero-gradient { background: linear-gradient(135deg, #00C6FF 0%, #0072FF 100%); }
+        .bg-grid-pattern { background-image: radial-gradient(rgba(255, 255, 255, 0.1) 1px, transparent 1px); background-size: 30px 30px; }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-900 flex flex-col min-h-screen">
+
+    <div class="relative w-full">
+        <div class="bg-[#0F172A] rounded-b-[4rem] shadow-lg relative overflow-hidden pb-12">
+            <div class="absolute inset-0 bg-grid-pattern opacity-30 pointer-events-none"></div>
+            <div class="max-w-7xl mx-auto px-6 pt-8 flex justify-between items-center relative z-10">
+                <a href="index.html" class="flex items-center gap-3 group">
+                    <div class="bg-white/20 backdrop-blur-sm p-2 rounded-lg border border-white/20 group-hover:bg-white/30 transition">
+                         <svg class="w-6 h-6 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+                    </div>
+                    <span class="text-white font-bold text-sm uppercase tracking-wider">Back to Home</span>
+                </a>
+            </div>
+            <div class="max-w-4xl mx-auto text-center pt-10 px-6 relative z-10">
+                <h1 class="text-3xl md:text-5xl font-display font-extrabold text-white mb-2">Terms of Service</h1>
+                <p class="text-blue-100">Effective Date: January 1, 2026</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="max-w-4xl mx-auto px-6 py-20 -mt-8 relative z-20">
+        <div class="bg-white rounded-[2rem] shadow-xl border border-slate-100 p-8 md:p-12">
+            <div class="prose prose-slate max-w-none text-slate-600 leading-relaxed space-y-8">
+                
+                <section>
+                    <h2 class="text-2xl font-display font-bold text-slate-900 mb-4">1. Acceptance of Terms</h2>
+                    <p>By accessing or using the Publisher First platform, you agree to be bound by these Terms of Service. If you do not agree to these terms, you may not use our services.</p>
+                </section>
+
+                <section>
+                    <h2 class="text-2xl font-display font-bold text-slate-900 mb-4">2. Publisher Obligations</h2>
+                    <p>You agree to only submit websites that you own or have explicit permission to monetize. You strictly prohibited from:</p>
+                    <ul class="list-disc pl-5 space-y-2">
+                        <li>Generating invalid clicks or impressions (bot traffic).</li>
+                        <li>Placing ads on pages with illegal, adult, or hate speech content.</li>
+                        <li>Modifying the ad code provided by Publisher First.</li>
+                    </ul>
+                    <p class="mt-2 text-red-500 font-semibold text-sm bg-red-50 p-3 rounded-lg border border-red-100">Violation of these rules will result in immediate account termination and forfeiture of earnings.</p>
+                </section>
+
+                <section>
+                    <h2 class="text-2xl font-display font-bold text-slate-900 mb-4">3. Payments</h2>
+                    <p>Payments are issued on a Net-30 basis (or weekly for qualified publishers). The minimum payout threshold is $50. You are responsible for any taxes associated with your earnings.</p>
+                </section>
+
+                <section>
+                    <h2 class="text-2xl font-display font-bold text-slate-900 mb-4">4. Limitation of Liability</h2>
+                    <p>Publisher First shall not be liable for any indirect, incidental, or consequential damages arising out of your use of the service, including lost profits or data.</p>
+                </section>
+
+                <section>
+                    <h2 class="text-2xl font-display font-bold text-slate-900 mb-4">5. Termination</h2>
+                    <p>We reserve the right to terminate or suspend your account at any time, without prior notice, for conduct that we believe violates these Terms or is harmful to other users of the Service.</p>
+                </section>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="mt-auto bg-[#0F172A] text-white py-8 text-center text-sm text-slate-500">
+        &copy; 2026 Appmontize Media Pvt Ltd. All rights reserved.
+    </div>
+
+</body>
+</html>

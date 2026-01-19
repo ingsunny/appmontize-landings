@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy | Publisher First</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;500;700;800&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: { sans: ['"Plus Jakarta Sans"', 'sans-serif'], display: ['"Outfit"', 'sans-serif'] },
+                    colors: { brand: { cyan: '#00C6FF', blue: '#0072FF', dark: '#0F172A' } },
+                    borderRadius: { 'bubble': '7.5rem' }
+                }
+            }
+        }
+    </script>
+    <style>
+        .hero-gradient { background: linear-gradient(135deg, #00C6FF 0%, #0072FF 100%); }
+        .bg-grid-pattern { background-image: radial-gradient(rgba(255, 255, 255, 0.1) 1px, transparent 1px); background-size: 30px 30px; }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-900 flex flex-col min-h-screen">
+
+    <div class="relative w-full">
+        <div class="bg-[#0F172A] rounded-b-[4rem] shadow-lg relative overflow-hidden pb-12">
+            <div class="absolute inset-0 bg-grid-pattern opacity-30 pointer-events-none"></div>
+            
+            <div class="max-w-7xl mx-auto px-6 pt-8 flex justify-between items-center relative z-10">
+                <a href="index.html" class="flex items-center gap-3 group">
+                    <div class="bg-white/20 backdrop-blur-sm p-2 rounded-lg border border-white/20 group-hover:bg-white/30 transition">
+                         <svg class="w-6 h-6 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+                    </div>
+                    <span class="text-white font-bold text-sm uppercase tracking-wider">Back to Home</span>
+                </a>
+            </div>
+
+            <div class="max-w-4xl mx-auto text-center pt-10 px-6 relative z-10">
+                <h1 class="text-3xl md:text-5xl font-display font-extrabold text-white mb-2">Privacy Policy</h1>
+                <p class="text-blue-100">Last Updated: January 2026</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="max-w-4xl mx-auto px-6 py-20 -mt-8 relative z-20">
+        <div class="bg-white rounded-[2rem] shadow-xl border border-slate-100 p-8 md:p-12">
+            <div class="prose prose-slate max-w-none text-slate-600 leading-relaxed space-y-8">
+                
+                <section>
+                    <h2 class="text-2xl font-display font-bold text-slate-900 mb-4">1. Introduction</h2>
+                    <p>Publisher First ("we," "our," or "us") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, and share information about you when you use our websites and monetization services.</p>
+                </section>
+
+                <section>
+                    <h2 class="text-2xl font-display font-bold text-slate-900 mb-4">2. Information We Collect</h2>
+                    <ul class="list-disc pl-5 space-y-2">
+                        <li><strong>Account Information:</strong> Name, email address, payment details, and tax identification numbers necessary for payouts.</li>
+                        <li><strong>Usage Data:</strong> Information about how you access our dashboard, including IP address, browser type, and login times.</li>
+                        <li><strong>Ad Performance Data:</strong> We collect data regarding impressions, clicks, and earnings generated through your websites.</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2 class="text-2xl font-display font-bold text-slate-900 mb-4">3. Cookies & Advertising Technologies</h2>
+                    <p>We use cookies and similar tracking technologies (beacons, pixels) to track the activity on our service and hold certain information. As an ad network, we may allow third-party partners to place cookies on user browsers for targeted advertising purposes.</p>
+                </section>
+
+                <section>
+                    <h2 class="text-2xl font-display font-bold text-slate-900 mb-4">4. Data Sharing</h2>
+                    <p>We do not sell your personal data. However, we share necessary data with:</p>
+                    <ul class="list-disc pl-5 space-y-2">
+                        <li><strong>Payment Processors:</strong> To facilitate your earnings payouts (e.g., PayPal, Stripe, Banks).</li>
+                        <li><strong>Demand Partners:</strong> Aggregated traffic data is shared with advertisers to optimize fill rates and CPMs.</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2 class="text-2xl font-display font-bold text-slate-900 mb-4">5. Contact Us</h2>
+                    <p>If you have any questions about this Privacy Policy, please contact us at <a href="mailto:legal@publisherfirst.com" class="text-brand-blue font-bold hover:underline">legal@publisherfirst.com</a>.</p>
+                </section>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="mt-auto bg-[#0F172A] text-white py-8 text-center text-sm text-slate-500">
+        &copy; 2026 Appmontize Media Pvt Ltd. All rights reserved.
+    </div>
+
+</body>
+</html>

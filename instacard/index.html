@@ -1,0 +1,380 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Action Required: Activate Your Insta EMI Card</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['"Inter"', "sans-serif"],
+            },
+            colors: {
+              brand: {
+                primary: "#002a53" /* Main Brand Color */,
+                dark: "#002142" /* Highlight/Hover Color */,
+                success: "#059669",
+                light: "#f8fafc",
+                border: "#e2e8f0",
+              },
+            },
+            boxShadow: {
+              card: "0 20px 40px -10px rgba(0, 42, 83, 0.15)",
+              button: "0 10px 25px -5px rgba(0, 33, 66, 0.3)",
+            },
+            animation: {
+              float: "float 6s ease-in-out infinite",
+              "pulse-slow": "pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite",
+            },
+            keyframes: {
+              float: {
+                "0%, 100%": { transform: "translateY(0)" },
+                "50%": { transform: "translateY(-12px)" },
+              },
+            },
+          },
+        },
+      };
+    </script>
+
+    <style>
+      body {
+        -webkit-font-smoothing: antialiased;
+        background-color: #f1f5f9; /* Soft light gray background */
+      }
+
+      /* Subtle background grid for texture */
+      .bg-grid {
+        background-image:
+          linear-gradient(to right, rgba(0, 0, 0, 0.03) 1px, transparent 1px),
+          linear-gradient(to bottom, rgba(0, 0, 0, 0.03) 1px, transparent 1px);
+        background-size: 24px 24px;
+      }
+
+      /* Shimmer effect for the CTA button */
+      .btn-shimmer {
+        position: relative;
+        overflow: hidden;
+      }
+      .btn-shimmer::after {
+        content: "";
+        position: absolute;
+        top: -50%;
+        right: -50%;
+        bottom: -50%;
+        left: -50%;
+        background: linear-gradient(
+          to bottom,
+          rgba(229, 231, 235, 0),
+          rgba(255, 255, 255, 0.4) 50%,
+          rgba(229, 231, 235, 0)
+        );
+        transform: rotateZ(60deg) translate(-5em, 7.5em);
+        animation: shimmer 3s infinite;
+        opacity: 0;
+      }
+      @keyframes shimmer {
+        0% {
+          transform: rotateZ(60deg) translate(-15em, 7.5em);
+          opacity: 1;
+        }
+        100% {
+          transform: rotateZ(60deg) translate(15em, -7.5em);
+          opacity: 1;
+        }
+      }
+    </style>
+  </head>
+  <body
+    class="relative min-h-screen flex flex-col items-center py-6 px-4 text-slate-800"
+  >
+    <div class="fixed inset-0 bg-grid pointer-events-none z-0"></div>
+
+    <main
+      class="relative z-10 w-full max-w-[440px] mx-auto flex flex-col items-center"
+    >
+      <div class="w-full flex justify-between items-center mb-8 px-2">
+        <div
+          class="text-brand-primary font-extrabold tracking-tight text-2xl flex items-center gap-2"
+        >
+          <!-- <svg
+            class="w-6 h-6"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2.5"
+              d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z"
+            ></path>
+          </svg> -->
+          <img class="h-10 w-50" src="image.png" alt="emi-card" />
+        </div>
+        <!-- <div class="flex items-center gap-1.5 text-xs font-bold text-slate-400">
+          <svg
+            class="w-4 h-4 text-brand-success"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2.5"
+              d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"
+            ></path>
+          </svg>
+          Secured
+        </div> -->
+        <div class="flex items-center gap-2.5 mb-3">
+          <div class="relative flex items-center justify-center w-2.5 h-2.5">
+            <div
+              class="w-2.5 h-2.5 bg-red-500 rounded-full animate-pulse-slow relative z-10"
+            ></div>
+            <div
+              class="absolute inset-0 bg-red-500 rounded-full animate-ping opacity-75"
+            ></div>
+          </div>
+          <h2
+            class="text-xs font-bold text-slate-500 uppercase tracking-[0.15em]"
+          >
+            Unclaimed
+          </h2>
+        </div>
+      </div>
+
+      <div class="w-full px-2 mb-8">
+        <h1
+          class="text-2xl font-extrabold text-brand-primary leading-[1.15] tracking-tight"
+        >
+          Your Insta Credit Card Limit Up To
+          <span
+            class="text-transparent bg-clip-text bg-gradient-to-r from-brand-primary to-blue-500"
+            >₹3,00,000</span
+          >
+          is ready to dispatch.
+        </h1>
+      </div>
+      <a
+        class="dynamic_link w-full max-w-[420px] aspect-[1.586/1] mb-8 relative animate-float"
+      >
+        <img
+          src="qw.png"
+          alt="Insta EMI Card"
+          class="w-full h-full object-contain"
+        />
+      </a>
+
+      <div class="w-full mb-6 px-2">
+        <div class="flex justify-between text-xs font-bold text-slate-500 mb-2">
+          <span>Activation Progress</span>
+          <span class="text-brand-primary">Step 1 of 4</span>
+        </div>
+        <div class="w-full h-2.5 bg-slate-200 rounded-full overflow-hidden">
+          <div class="w-1/4 h-full bg-brand-primary rounded-full relative">
+            <div
+              class="absolute inset-0 bg-white/20 w-full h-full animate-[shimmer_2s_infinite]"
+            ></div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="w-full bg-white rounded-2xl border border-brand-border p-1 mb-8 shadow-sm"
+      >
+        <div class="bg-slate-50 rounded-xl p-5 border border-slate-100">
+          <h3
+            class="text-sm font-bold text-brand-primary mb-4 flex items-center gap-2"
+          >
+            <svg
+              class="w-4 h-4 text-brand-primary"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2.5"
+                d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+              ></path>
+            </svg>
+            Unlock Requirements Met If:
+          </h3>
+
+          <ul class="space-y-3">
+            <li
+              class="flex items-center gap-3 text-sm font-medium text-slate-600"
+            >
+              <div
+                class="w-6 h-6 rounded-full bg-teal-500/10 flex items-center justify-center text-brand-primary flex-shrink-0"
+              >
+                ✓
+              </div>
+              You are between 21 to 65 Years Old
+            </li>
+            <li
+              class="flex items-center gap-3 text-sm font-medium text-slate-600"
+            >
+              <div
+                class="w-6 h-6 rounded-full bg-teal-500/10 flex items-center justify-center text-brand-primary flex-shrink-0"
+              >
+                ✓
+              </div>
+              Your CIBIL Score is 720 or higher
+            </li>
+            <li
+              class="flex items-center gap-3 text-sm font-medium text-slate-600"
+            >
+              <div
+                class="w-6 h-6 rounded-full bg-teal-500/10 flex items-center justify-center text-brand-primary flex-shrink-0"
+              >
+                ✓
+              </div>
+              You have an active income source
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="h-16 sm:h-24"></div>
+
+      <!-- <div
+        class="w-full fixed bottom-0 left-0 p-4 bg-white/90 backdrop-blur-md border-t border-brand-border md:relative md:bg-transparent md:border-none md:p-0 md:backdrop-blur-none z-50"
+      >
+        <a
+          href="https://www.bajajfinserv.in/insta-emi-card"
+          class="block w-full max-w-[440px] mx-auto"
+        >
+          <button
+            class="btn-shimmer w-full bg-brand-primary hover:bg-brand-dark text-white shadow-button rounded-xl py-4 px-6 font-bold text-lg flex items-center justify-center gap-2 transition-all duration-200 active:scale-[0.98]"
+          >
+            Claim My Limit Now
+            <svg
+              class="w-5 h-5"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2.5"
+                d="M14 5l7 7m0 0l-7 7m7-7H3"
+              ></path>
+            </svg>
+          </button>
+        </a>
+        <p class="text-center text-[11px] text-slate-400 mt-3 font-medium px-4">
+          100% Digital KYC • Zero Physical Paperwork • Accepted at 1.5 Lakh+
+          Stores
+        </p>
+      </div> -->
+
+      <div
+        class="w-full fixed bottom-0 left-0 p-4 pb-2 sm:pb-6 bg-white/20 backdrop-blur-sm border-t border-white/20 shadow-[0_-20px_40px_rgba(0,0,0,0.04)] z-[100] supports-[backdrop-filter]:bg-white/50"
+      >
+        <a class="dynamic_link block w-full max-w-[440px] mx-auto">
+          <button
+            class="btn-shimmer w-full bg-brand-primary hover:bg-brand-dark text-white shadow-button rounded-xl py-3 sm:py-4 px-6 font-bold text-lg flex items-center justify-center gap-2 transition-all duration-200 active:scale-[0.98] mb-1"
+          >
+            Claim My Card Now
+            <svg
+              class="w-5 h-5"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2.5"
+                d="M14 5l7 7m0 0l-7 7m7-7H3"
+              ></path>
+            </svg>
+          </button>
+        </a>
+        <p
+          class="text-center text-black text-[8px] sm:text-[11px] text-slate-500 sm:mt-3 font-medium px-4 drop-shadow-sm"
+        >
+          100% Digital KYC • Zero Physical Paperwork • Accepted at 1.5 Lakh+
+          Stores
+        </p>
+      </div>
+    </main>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // 1. Grab the parameters from the URL the user clicked to get here
+        const params = new URLSearchParams(window.location.search);
+
+        const affClickFromUrl = params.get("aff_click_id");
+        const realFbclid = params.get("fbclid"); // Facebook automatically appends this
+        const scFromUrl = params.get("sc"); // Grabs sub-campaign/ad-name if you use it
+
+        // 2. Macro Protection: Determine the real Click ID
+        let finalClickId = null;
+        if (affClickFromUrl && affClickFromUrl !== "{fbclid}") {
+          // The marketer passed a real, valid click ID
+          finalClickId = affClickFromUrl;
+        } else if (realFbclid) {
+          // The macro broke, but Facebook passed the real ID natively, so we use that
+          finalClickId = realFbclid;
+        }
+
+        // Macro Protection for Ad Name (Optional but good practice)
+        let finalSc = null;
+        if (scFromUrl && scFromUrl !== "{ad_name}") {
+          finalSc = scFromUrl;
+        }
+
+        // 3. Set up your base outbound affiliate link
+        const finalURL = new URL("https://paychat.fuse-ad.com/tl");
+        finalURL.searchParams.set("a", "1694");
+        finalURL.searchParams.set("o", "5964");
+
+        // 4. Safely inject the cleaned parameters into the final link
+        if (finalClickId) {
+          finalURL.searchParams.set("aff_click_id", finalClickId);
+        }
+        if (finalSc) {
+          finalURL.searchParams.set("sc", finalSc);
+        }
+
+        // 5. Find all buttons/links with the class "dynamic_link" and update them
+        const outboundString = finalURL.toString();
+        const dynamicLinks = document.querySelectorAll(".dynamic_link");
+
+        dynamicLinks.forEach((link) => {
+          // Update the destination URL
+          link.href = outboundString;
+
+          // Optional: Fire a Facebook Pixel 'Lead' event when they click the button
+          link.addEventListener("click", function () {
+            if (typeof fbq === "function") {
+              fbq("track", "Lead", {
+                content_name: "InstaCard_Prelander_Click",
+                click_id: finalClickId || "unknown",
+                ad_name: finalSc || "unknown",
+              });
+            }
+          });
+        });
+      });
+    </script>
+  </body>
+</html>

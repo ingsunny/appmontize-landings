@@ -1,0 +1,87 @@
+/* Custom styles for the page */
+
+/* Hides elements with this class initially, used by tracking scripts */
+.dtpcnt {
+    opacity: 0;
+}
+
+/* A placeholder for city name, defaults to US if empty */
+.city:empty:before {
+    content: "US";
+}
+
+
+/* Chat Button Styling */
+.chat-button {
+    display: inline-block;
+    background-color: #3b82f6; /* Tailwind's bg-blue-500 */
+    color: white;
+    font-weight: bold;
+    padding: 0.75rem 2rem; /* py-3 px-8 */
+    border-radius: 9999px; /* rounded-full */
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.2s;
+}
+
+.chat-button:hover {
+    background-color: #2563eb; /* A darker blue for hover */
+}
+
+/* Call to Action Button */
+.ttc-button {
+    display: inline-block;
+    background-color: #3b82f6; /* Tailwind's bg-blue-500 */
+    color: white;
+    font-weight: bold;
+    padding: 0.75rem 2rem;
+    border-radius: 9999px;
+    text-decoration: none;
+}
+
+.ttc-button i {
+    margin-right: 8px;
+}
+
+/* Typing Animation */
+.typing-animation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 20px;
+}
+
+.typing-dot {
+    width: 6px;
+    height: 6px;
+    background-color: #9ca3af; /* gray-400 */
+    border-radius: 50%;
+    margin: 0 2px;
+    animation: typing 1s infinite;
+}
+
+.typing-dot:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.typing-dot:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+@keyframes typing {
+    0%, 100% {
+        transform: translateY(0);
+        opacity: 0.5;
+    }
+    50% {
+        transform: translateY(-4px);
+        opacity: 1;
+    }
+}
+
+
+.speaking-bubble {
+    border: 2px solid #3b82f6; /* Blue border */
+    box-shadow: 0 0 10px rgba(59, 130, 246, 0.5);
+    transition: all 0.2s ease-in-out;
+}

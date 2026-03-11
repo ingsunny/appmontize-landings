@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us - Improve Savings</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* --- Contact Form Styles --- */
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box; /* Important for padding and width */
+}
+
+.contact-form .cta-button {
+    width: 100%;
+    max-width: 100%; /* Override previous max-width for this context */
+    cursor: pointer;
+}
+    </style>
+</head>
+<body>
+
+    <!-- <header>
+        <div class="logo">
+             <a href="index.html"><img src="logo.png" alt="Improve Savings Logo" /></a>
+        </div>
+        <div class="advertorial">Advertorial</div>
+    </header> -->
+
+    <main class="content">
+        <h1>Contact Us</h1>
+        <p style="text-align: center; margin-bottom: 40px;">Have questions or feedback? Fill out the form below, and we'll get back to you as soon as possible.</p>
+
+        <form action="[YOUR_FORM_HANDLER_URL]" method="POST" class="contact-form">
+            <div class="form-group">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="6" required></textarea>
+            </div>
+            <button type="submit" class="cta-button">Send Message</button>
+        </form>
+    </main>
+
+    <footer class="footer">
+        <p>Copyright © Bestseniorcoverage.co/ © 2025  | All rights reserved</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,187 @@
+/* General Body Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+}
+
+a {
+    text-decoration: none;
+    color: inherit; /* Links inherit color from parent by default */
+}
+
+/* Header Styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px;
+    border-bottom: 3px solid #002f87;
+}
+
+header .logo img {
+    height: 110px;
+}
+
+header .advertorial {
+    font-size: 14px;
+    color: #002f87;
+}
+
+/* Main Content Styles */
+.content {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.content h1 {
+    font-size: 35px;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+.content img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.content p {
+    margin-top: 20px;
+    font-size: 21px;
+    color: #222;
+    text-align: justify;
+}
+
+/* Eligibility Section Styles */
+.eligibility-section {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.eligibility-section h2 {
+    font-size: 35px;
+    font-weight: bold;
+    color: #111;
+    text-align: justify;
+}
+
+.eligibility-section p {
+    font-size: 16px;
+    color: #222;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.eligibility-steps {
+    text-align: left;
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+.eligibility-steps strong {
+    color: #111;
+}
+
+/* Call-to-Action Button */
+.cta-button {
+    display: inline-block;
+    background-color: #28b323;
+    color: #fff;
+    padding: 18px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    max-width: 500px;
+}
+
+.cta-button:hover {
+    background-color: #1e8f1a;
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #043059;
+    color: #ffffff;
+    padding: 30px 20px;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 15px 0;
+}
+
+.footer-links li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.footer-links li:not(:last-child)::after {
+    content: "|";
+    margin-left: 10px;
+    color: #ffffff;
+}
+
+.footer a {
+    color: #85bfff;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Media Queries */
+@media (max-width: 600px) {
+    .content h1 {
+        font-size: 20px;
+    }
+
+    .content p {
+        font-size: 14px;
+    }
+
+    .eligibility-section h2 {
+        font-size: 20px;
+    }
+
+    .cta-button {
+        font-size: 16px;
+        padding: 16px;
+        width: 100%;
+        max-width: none;
+    }
+
+    .footer {
+        font-size: 13px;
+        padding: 20px 15px;
+    }
+
+    .footer-links ul {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    .footer-links li {
+        margin-right: 0;
+    }
+    
+    .footer-links li:not(:last-child)::after {
+        content: "";
+        margin-left: 0;
+    }
+}
